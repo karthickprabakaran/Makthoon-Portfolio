@@ -4,255 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animated Movie Website</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-image: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-
-        .header-content {
-            text-align: center;
-            z-index: 1;
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        h1 {
-            font-size: 4rem;
-            margin-bottom: 20px;
-            opacity: 0;
-            transform: translateY(-50px);
-            animation: fadeInDown 1s ease-out forwards;
-        }
-
-        .movie-posters {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 50px;
-        }
-
-        .poster {
-            width: 200px;
-            height: 300px;
-            margin: 20px;
-            background-size: cover;
-            background-position: center;
-            opacity: 0;
-            transform: scale(0.8);
-            transition: all 0.3s ease;
-            animation: fadeIn 1s ease-out forwards;
-        }
-
-        .poster:hover {
-            transform: scale(1.05);
-        }
-
-        .youtube-embed {
-            text-align: center;
-            margin-top: 50px;
-            opacity: 0;
-            animation: fadeIn 1s ease-out forwards 0.5s;
-        }
-
-        .behind-scenes, .screenplay {
-            margin-top: 50px;
-            opacity: 0;
-            animation: fadeIn 1s ease-out forwards 1s;
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        h2 {
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .behind-scenes-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .behind-scenes-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
-            transition: transform 0.3s ease;
-        }
-
-        .behind-scenes-image:hover {
-            transform: scale(1.05);
-        }
-
-        .screenplay-slider {
-            position: relative;
-            overflow: hidden;
-            height: 400px;
-        }
-
-        .screenplay-slide {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
-
-        .screenplay-slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .screenplay-slide.active {
-            opacity: 1;
-        }
-
-        .slider-nav {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .slider-nav button {
-            background-color: #ffffff;
-            border: none;
-            color: #121212;
-            padding: 5px 10px;
-            margin: 0 5px;
-            cursor: pointer;
-            border-radius: 3px;
-        }
-
-        @keyframes fadeInDown {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-    </style>
+   
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>Inception</h1>
-        </div>
-    </header>
 
-    <div class="container">
-        <h2>Poster Designs
+    <!--Heaader section-->
 
-        </h2>
-        <section class="movie-posters">
-            <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg');"></div>
-            <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_.jpg');"></div>
-            <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg');"></div>
-            <div class="poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg');"></div>
-        </section>
-
-        <section class="youtube-embed">
-            <h2>Watch The movie</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/YoHD9XEInc0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
-
-        <section class="screenplay">
-            <h2>Screenig</h2>
-            <div class="screenplay-slider">
-                <div class="screenplay-slide active">
-                    <img src="https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Screenplay 1">
+    <section>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
                 </div>
-                <div class="screenplay-slide">
-                    <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Screenplay 2">
-                </div>
-                <div class="screenplay-slide">
-                    <img src="https://images.unsplash.com/photo-1518844826-323c8ede8bf2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Screenplay 3">
-                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl">daisyUI</a>
             </div>
-            <div class="slider-nav">
-                <button onclick="changeSlide(-1)">Previous</button>
-                <button onclick="changeSlide(1)">Next</button>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Item 1</a></li>
+                <li>
+                  <details>
+                    <summary>Parent</summary>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </details>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
             </div>
-        </section>
+            <div class="navbar-end">
+              <a class="btn">Button</a>
+            </div>
+          </div>
+    </section>
 
-        <section class="behind-scenes">
-            <h2>Behind the Scenes</h2>
-            <div class="behind-scenes-grid">
-                <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Behind the scenes 1" class="behind-scenes-image">
-                <img src="https://images.unsplash.com/photo-1500099817043-86d46000d58f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Behind the scenes 2" class="behind-scenes-image">
-                <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Behind the scenes 3" class="behind-scenes-image">
-                <img src="https://images.unsplash.com/photo-1581955957646-b8c7353e9696?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Behind the scenes 4" class="behind-scenes-image">
-            </div>
-        </section>
-
+    <!--hero section-->
+    <section>
         
-    </div>
+        <div class="hero min-h-screen"
+            style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-neutral-content text-center">
+                <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                <p class="mb-5">
+                    Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                    quasi. In deleniti eaque aut repudiandae et a id nisi.
+                </p>
+                <button class="btn btn-primary">Get Started</button>
+                </div>
+            </div>
+            </div>
+    </section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const posters = document.querySelectorAll('.poster');
-            posters.forEach((poster, index) => {
-                poster.style.animationDelay = `${index * 0.2}s`;
-            });
+    <!--posters section-->
+    <section class="container mx-auto px-6 py-12">
+        <h2 class="text-3xl font-bold text-center mb-6">Poster Designs</h2>
 
-            const sections = document.querySelectorAll('section');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.animationPlayState = 'running';
-                    }
-                });
-            }, { threshold: 0.1 });
-
-            sections.forEach(section => {
-                observer.observe(section);
-            });
-        });
-
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.screenplay-slide');
-
-        function changeSlide(direction) {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + direction + slides.length) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }
-    </script>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="card bg-gray-800 shadow-lg hover:scale-105 transition-transform duration-300">
+                <figure><img class="rounded-lg" src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp" alt="Nature" /></figure>
+            </div>
+            <div class="card bg-gray-800 shadow-lg hover:scale-105 transition-transform duration-300">
+                <figure><img class="rounded-lg" src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp" alt="City" /></figure>
+            </div>
+            <div class="card bg-gray-800 shadow-lg hover:scale-105 transition-transform duration-300">
+                <figure><img class="rounded-lg" src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp"
+            <div class="card bg-gray-800 shadow-lg hover:scale-105 transition-transform duration-300">
+                <figure><img class="rounded-lg" src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp" alt="Ocean" /></figure>
+            </div>
+            <div class="card bg-gray-800 shadow-lg hover:scale-105 transition-transform duration-300">
+                <figure><img class="rounded-lg" src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp" alt="Ocean" /></figure>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
