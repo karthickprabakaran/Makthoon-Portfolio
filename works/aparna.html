@@ -139,10 +139,10 @@
               transform: translateY(0);
           }
       </style>
-  
+
       <script>
           document.addEventListener("DOMContentLoaded", function () {
-              const section = document.querySelector('.slide-in');
+              const sections = document.querySelectorAll('.slide-in');
               const observer = new IntersectionObserver(entries => {
                   entries.forEach(entry => {
                       if (entry.isIntersecting) {
@@ -150,19 +150,36 @@
                       }
                   });
               }, { threshold: 0.3 });
-  
-              observer.observe(section);
+
+              sections.forEach(section => observer.observe(section));
           });
       </script>
-  
-      <div class="slide-in">
+
+      <!-- Trailer Section -->
+      <div class="slide-in mb-16">
           <h2 class="text-3xl font-bold mb-4">Watch Our Trailer</h2>
-          <p class="text-gray-400 mb-6">info about the trailer </p>
+          <p class="text-gray-400 mb-6">Info about the trailer</p>
           <div class="relative w-full max-w-5xl mx-auto pb-[40%] h-0"> 
               <iframe 
                   class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg" 
                   src="https://www.youtube.com/embed/b6JxgkgmYok?controls=1&rel=0&autoplay=0&enablejsapi=1" 
-                  title="Embedded Video"
+                  title="Trailer Video"
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+              </iframe>
+          </div>
+      </div>
+
+      <!-- Movie Section -->
+      <div class="slide-in">
+          <h2 class="text-3xl font-bold mb-4">Watch the Full Movie</h2>
+          <p class="text-gray-400 mb-6">Enjoy the full experience of our movie</p>
+          <div class="relative w-full max-w-5xl mx-auto pb-[40%] h-0"> 
+              <iframe 
+                  class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg" 
+                  src="https://www.youtube.com/embed/b6JxgkgmYok?controls=1&rel=0&autoplay=0&enablejsapi=1" 
+                  title="Movie Video"
                   frameborder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                   allowfullscreen>
@@ -170,6 +187,15 @@
           </div>
       </div>
   </section>
+
+  
+
+
+  <!--Movie Section-->
+
+  
+
+  
 
 
 
