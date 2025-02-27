@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Movie Website</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <head>
+    <meta charset="utf-8">
+    <title>
+        Mohammed Maqdoom 
+    </title>
 
-   
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Runex v1.0 || ex nihilo || September 2021 -->
+    <!-- style start -->
+    <link href="css/plugins.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/style-DARK.css" media="all" rel="stylesheet" type="text/css">
+    <!-- style end -->
+    <!-- google fonts start -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7COswald:300,400,700" rel="stylesheet" type="text/css">
+    <!-- google fonts end -->
 </head>
 <body>
 
@@ -75,10 +88,13 @@
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-neutral-content text-center">
                 <div class="max-w-md">
-                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                <h1 class="mb-5 text-5xl font-bold">Movie Name</h1>
                 <p class="mb-5">
-                    Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                    quasi. In deleniti eaque aut repudiandae et a id nisi.
+                    Small description about the movie  Small description about the movie
+                    Small description about the movie
+                    Small description about the movie
+                    Small description about the movie
+
                 </p>
                 <button class="btn btn-primary">Get Started</button>
                 </div>
@@ -107,7 +123,57 @@
             </div>
         </div>
     </section>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--Trailer video section -->
+
+    <section class="py-16 px-4 sm:px-6 lg:px-8 text-center relative">
+      <style>
+          /* Slide-in animation */
+          .slide-in {
+              opacity: 0;
+              transform: translateY(50px);
+              transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+          }
+          .slide-in.visible {
+              opacity: 1;
+              transform: translateY(0);
+          }
+      </style>
+  
+      <script>
+          document.addEventListener("DOMContentLoaded", function () {
+              const section = document.querySelector('.slide-in');
+              const observer = new IntersectionObserver(entries => {
+                  entries.forEach(entry => {
+                      if (entry.isIntersecting) {
+                          entry.target.classList.add('visible');
+                      }
+                  });
+              }, { threshold: 0.3 });
+  
+              observer.observe(section);
+          });
+      </script>
+  
+      <div class="slide-in">
+          <h2 class="text-3xl font-bold mb-4">Watch Our Trailer</h2>
+          <p class="text-gray-400 mb-6">info about the trailer </p>
+          <div class="relative w-full max-w-5xl mx-auto pb-[40%] h-0"> 
+              <iframe 
+                  class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg" 
+                  src="https://www.youtube.com/embed/b6JxgkgmYok?controls=1&rel=0&autoplay=0&enablejsapi=1" 
+                  title="Embedded Video"
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+              </iframe>
+          </div>
+      </div>
+  </section>
+
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
 </body>
 </html>
