@@ -27,7 +27,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7COswald:300,400,700" rel="stylesheet" type="text/css">
     <!-- google fonts end -->
 </head>
-<body>
+<body >
 
     <!--Heaader section-->
 
@@ -94,87 +94,10 @@
             </div>
     </section>
 
-    <!--posters section-->
-    <section class="container mx-auto px-6 py-6">
-        <h2 class="text-3xl font-bold text-center mb-6 text-white">Poster Designs</h2>
     
-        <div class="grid gap-6">
-            <!-- First Row (Three Posters) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="card bg-gray-800 shadow-lg hover:scale-105 transition-transform duration-300 overflow-hidden">
-                    <figure>
-                        <img class="rounded-lg w-full h-auto" src="../img/Posters/Arul/11.jpg" alt="Invitation Poster">
-                    </figure>
-                </div>
-    
-                <div class="card bg-gray- shadow-lg hover:scale-105 transition-transform duration-300 overflow-hidden">
-                    <figure>
-                        <img class="rounded-lg w-full h-auto" src="../img/Posters/Arul/12.jpg" alt="Social Media Poster 1">
-                    </figure>
-                </div>
-            </div>
-    
-            <!-- Second Row (Two Posters) -->
-            <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
-                <div class="card bg-gray-800 shadow-lg hover:scale-105 transition-transform duration-300 overflow-hidden flex justify-center items-center">
-                    <figure>
-                        <img class="rounded-lg w-auto h-auto max-w-full max-h-full" src="../img/Posters/Arul/15.jpg" alt="Event Poster 2">
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Trailer video section -->
-
-    <section id="trailer-section" class="py-16 px-4 sm:px-6 lg:px-8 text-center relative" style="background-color: #000;">
-      <style>
-          /* Slide-in animation */
-          .slide-in {
-              opacity: 0;
-              transform: translateY(50px);
-              transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-          }
-          .slide-in.visible {
-              opacity: 1;
-              transform: translateY(0);
-          }
-      </style>
-
-      <script>
-          document.addEventListener("DOMContentLoaded", function () {
-              const sections = document.querySelectorAll('.slide-in');
-              const observer = new IntersectionObserver(entries => {
-                  entries.forEach(entry => {
-                      if (entry.isIntersecting) {
-                          entry.target.classList.add('visible');
-                      }
-                  });
-              }, { threshold: 0.3 });
-
-              sections.forEach(section => observer.observe(section));
-          });
-      </script>
-
-      <!-- Trailer Section -->
-      <div class="slide-in mb-16" id="trailer-section">
-          <h2 class="text-3xl font-bold mb-4">Watch Our Trailer</h2>
-          <p class="text-gray-400 mb-6">Info about the trailer</p>
-          <div class="relative w-full max-w-5xl mx-auto pb-[40%] h-0"> 
-              <iframe 
-                  class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg" 
-                  src="https://www.youtube.com/embed/4lDOLoeE8xs?controls=1&rel=0&autoplay=0&enablejsapi=1"
-                  title="Trailer Video"
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-          </div>
-      </div>
-
       <!-- Movie Section -->
 <!-- Movie Section -->
-<div class="slide-in text-center">
+<div class="slide-in text-center" style="margin-top: 100px;padding-bottom: 150px;">
     <h2 class="text-3xl font-bold mb-4">Watch the Full Movie</h2>
     <p class="text-gray-400 mb-6">Enjoy the full experience of our movie</p>
     <div class="relative w-full max-w-5xl mx-auto">
@@ -191,72 +114,7 @@
   
 
 
-  <!--screen grabs Section-->
-
-  <section class="bg-gray-900 py-10 px-4 max-w-full mx-auto" style="background-color: #000;">
-    <div class="max-w-full mx-auto text-center mt-5">
-        <h2 class="text-3xl font-bold text-white mb-6">Screens from the movie </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0">
-            <div class="relative group overflow-hidden  shadow-lg">
-                <img src="../img/SG/ArulNazrath/11.PNG" alt="Movie 1" class="w-full h-auto">
-                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <span class="text-white font-bold text-lg">Movie 1</span>
-                </div>
-            </div>
-            <div class="relative group overflow-hidden  shadow-lg">
-                <img src="../img/SG/ArulNazrath/12.PNG" alt="Movie 2" class="w-full h-auto">
-                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <span class="text-white font-bold text-lg">Movie 2</span>
-                </div>
-            </div>
-            <div class="relative group overflow-hidden  shadow-lg">
-                <img src="../img/SG/ArulNazrath/13.PNG" alt="Movie 3" class="w-full h-auto">
-                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <span class="text-white font-bold text-lg">Movie 3</span>
-                </div>
-            </div>
-            <div class="relative group overflow-hidden  shadow-lg">
-                <img src="../img/SG/ArulNazrath/14.PNG" alt="Movie 4" class="w-full h-auto">
-                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <span class="text-white font-bold text-lg">Movie 4</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="max-w-full mx-auto text-center mt-5">
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0">
-          <div class="relative group overflow-hidden  shadow-lg">
-              <img src="../img/SG/ArulNazrath/15.PNG" alt="Movie 1" class="w-full h-auto">
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span class="text-white font-bold text-lg">Movie 1</span>
-              </div>
-          </div>
-          <div class="relative group overflow-hidden  shadow-lg">
-              <img src="../img/SG/ArulNazrath/16.PNG" alt="Movie 2" class="w-full h-auto">
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span class="text-white font-bold text-lg">Movie 2</span>
-              </div>
-          </div>
-          <div class="relative group overflow-hidden  shadow-lg">
-              <img src="../img/SG/ArulNazrath/17.PNG" alt="Movie 3" class="w-full h-auto">
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span class="text-white font-bold text-lg">Movie 3</span>
-              </div>
-          </div>
-          <div class="relative group overflow-hidden  shadow-lg">
-              <img src="../img/SG/ArulNazrath/19.PNG" alt="Movie 4" class="w-full h-auto">
-              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span class="text-white font-bold text-lg">Movie 4</span>
-              </div>
-          </div>
-      </div>
-  </div>
-
-    
-</div>
-</section>
-
+  
 
   
 
