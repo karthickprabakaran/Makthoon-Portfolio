@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+        Mohammed Maqdoom 
+    </title>
+
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        body{
+            background-color: #0A0A0A;
+        }
+    </style>
+
+    <!-- Runex v1.0 || ex nihilo || September 2021 -->
+    <!-- style start -->
+    <link href="css/plugins.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/style-DARK.css" media="all" rel="stylesheet" type="text/css">
+    <!-- style end -->
+    <!-- google fonts start -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7COswald:300,400,700" rel="stylesheet" type="text/css">
+    <!-- google fonts end -->
+</head>
+<body>
+
+    <!--Heaader section-->
+
+    <section style="background-color: #000;">
+        <div class="navbar bg-black">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a href="../index.html#home">Home </a></li>
+                  <li><a href="../index.html#about">About </a></li>
+                  <li><a href="../index.html#experience">Experience  </a></li>
+                  <li><a href="../index.html#works"> Portfolio </a></li>
+                </ul>
+              </div>
+              <a href="../index.html" class="btn btn-ghost text-xl">Mohammed Makthoon</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a href="../index.html#home">Home </a></li>
+                  <li><a href="../index.html#about">About </a></li>
+                  <li><a href="../index.html#experience">Experience  </a></li>
+                  <li><a href="../index.html#works"> Portfolio </a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn" href="../index.html#contact">Contact</a>
+            </div>
+          </div>
+    </section>
+
+    <!--hero section-->
+    <section >
+        
+        <div class="hero min-h-screen"
+            style="background-image: url(../img/background/arul/img.jpeg);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-neutral-content text-center">
+                <div class="max-w-">
+                <h1 class="mb-5 text-5xl font-bold">Light House Song</h1>
+                <p class="mb-5">
+                    A Story of Empathy and Resilience
+                    Set against the vibrant yet unforgiving backdrop of Bengaluru, Arul Nazrath is a powerful exploration of friendship, identity, and the human spirit. When Arul, a heartbroken corporate employee, spirals into despair, his colleague Nazrath intervenes, sparking a raw and transformative conversation about faith, privilege, and the struggles of marginalized communities. Through an intimate exchange of emotions and perspectives, the film challenges societal prejudices and celebrates the unbreakable bonds formed through understanding and compassion. Arul Nazrath is more than a story—it's a reflection of the resilience that emerges when humanity triumphs over despair.
+
+                </p>
+                <a href="#trailer-section"><button  class="btn btn-primary">watch Trailer</button></a>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!--posters section-->
+    <section class="container mx-auto px-6 py-6">
+        <h2 class="text-3xl font-bold text-center mb-6 text-white">Poster Designs</h2>
+    
+        <div class="grid gap-6">
+            <!-- First Row (Three Posters) -->
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
+                <div class="card bg-gray-800 shadow-lg hover:scale-105 transition-transform duration-300 overflow-hidden">
+                    <figure>
+                        <img class="rounded-lg w-full h-auto" src="" alt="Invitation Poster">
+                    </figure>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <!--Trailer video section -->
+
+    <section id="trailer-section" class="py-16 px-4 sm:px-6 lg:px-8 text-center relative" style="background-color: #000;">
+      <style>
+          /* Slide-in animation */
+          .slide-in {
+              opacity: 0;
+              transform: translateY(50px);
+              transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+          }
+          .slide-in.visible {
+              opacity: 1;
+              transform: translateY(0);
+          }
+      </style>
+
+      <script>
+          document.addEventListener("DOMContentLoaded", function () {
+              const sections = document.querySelectorAll('.slide-in');
+              const observer = new IntersectionObserver(entries => {
+                  entries.forEach(entry => {
+                      if (entry.isIntersecting) {
+                          entry.target.classList.add('visible');
+                      }
+                  });
+              }, { threshold: 0.3 });
+
+              sections.forEach(section => observer.observe(section));
+          });
+      </script>
+
+      <!-- Trailer Section -->
+      <div class="slide-in mb-16" id="trailer-section">
+          <h2 class="text-3xl font-bold mb-4">Watch Our Trailer</h2>
+          <p class="text-gray-400 mb-6">Info about the trailer</p>
+          <div class="relative w-full max-w-5xl mx-auto pb-[40%] h-0"> 
+              <iframe 
+                  class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg" 
+                  src="https://www.youtube.com/embed/4lDOLoeE8xs?controls=1&rel=0&autoplay=0&enablejsapi=1"
+                  title="Trailer Video"
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+              </iframe>
+          </div>
+      </div>
+
+      <!-- Movie Section -->
+      <div class="slide-in text-center">
+        <h2 class="text-3xl font-bold mb-4">Watch the Full Movie</h2>
+        <p class="text-gray-400 mb-6">Enjoy the full experience of our movie</p>
+        <div class="relative w-full max-w-5xl mx-auto">
+            <div class="relative w-full aspect-[16/9]">
+                <iframe 
+                    class="absolute inset-0 w-full h-full rounded-lg shadow-lg" 
+                    src="https://www.youtube.com/embed/x6lKFd3o-4s?controls=1&autoplay=0" 
+                    title="Movie Video"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  
+
+
+  <!--screen grabs Section-->
+
+  <section class="bg-gray-900 py-10 px-4 max-w-full mx-auto" style="background-color: #000;">
+    <div class="max-w-full mx-auto text-center mt-5">
+        <h2 class="text-3xl font-bold text-white mb-6">Screens from the movie </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0">
+            <div class="relative group overflow-hidden  shadow-lg">
+                <img src="../img/SG/ArulNazrath/11.PNG" alt="Movie 1" class="w-full h-auto">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="text-white font-bold text-lg"></span>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden  shadow-lg">
+                <img src="../img/SG/ArulNazrath/12.PNG" alt="Movie 2" class="w-full h-auto">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="text-white font-bold text-lg"></span>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden  shadow-lg">
+                <img src="../img/SG/ArulNazrath/13.PNG" alt="Movie 3" class="w-full h-auto">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="text-white font-bold text-lg"></span>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden  shadow-lg">
+                <img src="../img/SG/ArulNazrath/14.PNG" alt="Movie 4" class="w-full h-auto">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="text-white font-bold text-lg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-full mx-auto text-center mt-5">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0">
+          <div class="relative group overflow-hidden  shadow-lg">
+              <img src="../img/SG/ArulNazrath/15.PNG" alt="Movie 1" class="w-full h-auto">
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span class="text-white font-bold text-lg"></span>
+              </div>
+          </div>
+          <div class="relative group overflow-hidden  shadow-lg">
+              <img src="../img/SG/ArulNazrath/16.PNG" alt="Movie 2" class="w-full h-auto">
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span class="text-white font-bold text-lg"></span>
+              </div>
+          </div>
+          <div class="relative group overflow-hidden  shadow-lg">
+              <img src="../img/SG/ArulNazrath/17.PNG" alt="Movie 3" class="w-full h-auto">
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span class="text-white font-bold text-lg"></span>
+              </div>
+          </div>
+          <div class="relative group overflow-hidden  shadow-lg">
+              <img src="../img/SG/ArulNazrath/19.PNG" alt="Movie 4" class="w-full h-auto">
+              <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span class="text-white font-bold text-lg"></span>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    
+</div>
+</section>
+
+<!--  Behind the Scenes Section -->
+
+<section class="bg-gray-900 text-white py-12 px-6" style="background-color: #000;">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">Behind The Scenes</h2>
+      <p class="text-lg text-gray-300 mb-8">
+        Explore the journey behind the magic! Here's a glimpse into the process that brings our vision to life.
+      </p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+        <!-- BTS Item 1 -->
+        <div class="p-6 rounded-lg shadow-lg">
+            <img src="../img/BTS/Arul Nazarath/11.jpg" alt="BTS Image" 
+                 class="w-84 h-64 object-cover rounded-lg mb-4">
+          </div>
+          
+          <!-- BTS Item 2 -->
+          <div class="p-6 rounded-lg shadow-lg">
+            <img src="../img/BTS/Arul Nazarath/12.jpg" alt="BTS Image" 
+                 class="w-84 h-64 object-cover rounded-lg mb-4">
+          </div>
+          
+          <!-- BTS Item 3 -->
+          <div class="p-6 rounded-lg shadow-lg">
+            <img src="../img/BTS/Arul Nazarath/13.jpg" alt="BTS Image" 
+                 class="w-84 h-64 object-cover rounded-lg mb-4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+  
+
+  
+
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</body>
+</html>
