@@ -24,6 +24,19 @@
                     display: none;
                 }
             }
+
+            @media (max-width: 768px) {
+                .song-des {
+                    display: none;
+                }
+            }
+
+            /* Reduce margin in desktop view */
+            @media (min-width: 769px) {
+                .song-des {
+                    margin-left: -50%; /* Adjust the margin as needed */
+                }
+            }
         </style>
     </head>
     <body>
@@ -892,6 +905,8 @@
                             </div>
                             <!-- Column end -->
                         </div>
+
+                        
                         <!-- Row end -->
                     
                         <!-- Row start -->
@@ -936,7 +951,7 @@
                                 <div class="inner-spacer">
                                     <!-- Circle wrapper start -->
                                     <div class="circle-wrapper-full">
-                                        <div class="carousel-item-all item-works-04" style="background-image: url('./img/BTS/Arul\ Nazarath/');"></div>
+                                        <div class="carousel-item-all item-works-04" style="background-image: url('./img/find.png');"></div>
                                         <!-- Center container start -->
                                         <div class="center-container">
                                             <!-- Center block start -->
@@ -967,6 +982,44 @@
                                     <!-- Divider end -->
                                 </div>
                             </div>
+
+
+                            <div class="col-md-12 song-des" style="margin-top: 45px;">
+                                <div class="inner-spacer">
+                                    <!-- Circle wrapper start -->
+                                    <div class="circle-wrapper-full">
+                                        <div class="carousel-item-all item-works-04" style="background-image: url('./img/LightHouse/14.png');"></div>
+                                        <!-- Center container start -->
+                                        <div class="center-container">
+                                            <!-- Center block start -->
+                                            <div class="center-block">
+                                                <!-- Button start -->
+                                                <div class="more-wraper-center">
+                                                    <a class="thumb-link" data-size="1920x1280" href="./works/lightHouse.html" target="_blank">
+                                                        <div class="more-button-bg-center more-button-circle"></div>
+                                                        <div class="more-button-txt-center">
+                                                            <span>Light House</span>
+                                                        </div>
+                                                    </a>
+                                                    <!-- Works item description start -->
+                                                    <div class="item-folio__caption">
+                                                        Lorem Ipsum is simply dummy text.
+                                                    </div>
+                                                    <!-- Works item description end -->
+                                                </div>
+                                                <!-- Button end -->
+                                            </div>
+                                            <!-- Center block end -->
+                                        </div>
+                                        <!-- Center container end -->
+                                    </div>
+                                    <!-- Circle wrapper end -->
+                                    <!-- Divider start -->
+                                    <div class="divider-m-2"></div>
+                                    <!-- Divider end -->
+                                </div>
+                            </div>
+
                             <!-- Column end -->
                         </div>
                         <!-- Row end -->
